@@ -39,7 +39,7 @@ app.post('/api/create', (req,res) => {
 })
 
 //Read DB
-app.post('/api/view', async(req, res) => {
+app.get('/api/view', async(req, res) => {
     //try-catch helps to get error
     try{
         let result = await MovieInfo.find();
